@@ -1,13 +1,93 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Karla:wght@700&display=swap");
+@import url("http://fonts.cdnfonts.com/css/maximum-impact");
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 37px;
+  background-image: linear-gradient(to right, #672280, #a626d3);
+}
+.left {
+  display: flex;
+  gap: 5px;
+}
+.left > img {
+  width: 32px;
+}
+.left > h3 {
+  font-family: "karla", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+}
+.right {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+}
+section {
+  margin: 36px auto;
+  width: 477px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main > section > input {
+  border: 1px #0d0d0d solid;
+  border-radius: 5px;
+  width: 230px;
+  outline: none;
+  height: 35px;
+  margin-bottom: 1rem;
+  color: #0d0d0d;
+  font-family: "karla", sans-serif;
+  font-weight: normal;
+  font-size: 0.75rem;
+  text-indent: 5px;
+}
+main > section > button {
+  width: 100%;
+  height: 40px;
+  background-image: linear-gradient(to right, #711f8d, #a818da);
+  color: #fff;
+  font-family: "karla", sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: filter 0.1s ease-in-out;
+}
+main > section > button:hover {
+  filter: brightness(95%);
+}
+.container {
+  margin: 25px auto;
+  width: 477px;
+  position: relative;
+}
+.container > img {
+  width: 100%;
+}
+.bottom,
+.top {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 32px;
+  -webkit-text-stroke: 2px black;
+  font-family: "Maximum Impact", sans-serif;
+}
+.top {
+  top: 10px;
+}
+.bottom {
+  bottom: 10px;
 }
